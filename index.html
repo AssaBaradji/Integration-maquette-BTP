@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>BTP-SOLUTION</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -77,7 +77,7 @@
                 <div class="element">
                     <img class="profil" src="assets/images/client1.png" alt="client1">
                     <div class="nom">
-                        <span>Ivan Moris</span>
+                        <h3>Ivan Moris</h3>
                         <div>
                             <img src="assets/images/mingcute_star-fill.png" alt="etoile">
                             <img src="assets/images/mingcute_star-fill.png" alt="etoile">
@@ -96,7 +96,7 @@
                 <div class="element">
                     <img class="profil" src="assets/images/client2.png" alt="client2">
                     <div class="nom">
-                        <span>Helene Peugeot</span>
+                        <h3>Helene Peugeot</h3>
                         <div>
                             <img src="assets/images/mingcute_star-fill.png" alt="etoile">
                             <img src="assets/images/mingcute_star-fill.png" alt="etoile">
@@ -115,7 +115,7 @@
                 <div class="element">
                     <img class="profil" src="assets/images/client3.png" alt="client3">
                     <div class="nom">
-                        <span>Mary kays</span>
+                        <h3>Mary kays</h3>
                         <div>
                             <img src="assets/images/mingcute_star-fill.png" alt="etoile">
                             <img src="assets/images/mingcute_star-fill.png" alt="etoile">
@@ -150,9 +150,18 @@
                 </div>
                 <form action="#">
                     <div class="corps-form">
-                        <input type="text" name="username" id="username" placeholder="Name" required>
-                        <input type="text" name="usermail" id="usermail" placeholder="Email" required>
-                        <textarea name="menu" id="message">message</textarea required>
+                        <div class="champ-saisie">
+                            <label for="name">Name</label>
+                            <input type="text" name="username" id="username" placeholder="Name" required>
+                        </div>
+                        <div class="champ-saisie">
+                            <label for="mail">Email</label>
+                            <input type="text" name="usermail" id="usermail" placeholder="Email" required>
+                        </div>
+                        <div class="champ-saisie">
+                            <label for="message">Message</label>
+                            <textarea name="menu" id="message">message</textarea required>
+                        </div>
                         <button class="submit">Envoyer</button>
                     </div>
                     
