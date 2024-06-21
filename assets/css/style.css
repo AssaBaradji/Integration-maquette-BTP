@@ -98,7 +98,7 @@ nav .logo img{
     justify-content: center;
     margin: 30px;
     border: 1px solid var(--Slate-Gray);
-    padding: 10px;
+    padding: 0 20px 0 20px;
     border-radius: 8px;
     width: 20%;
 }
@@ -106,22 +106,29 @@ nav .logo img{
     display: flex;
     flex-direction: column;
     margin: 0;
-    padding: 0 10px 0 10px
+    padding: 10px 0 0 10px;
+}
+.element{
+    padding: 30px 30px 0 0;
+}
+.profil{
+    width: 100px;
+    height: 100px  
 }
 .client-element .nom h6{
-    font-size: 20px;
+    font-size:16px;
     margin: 0;
 }
 .client-element p{
     color: var(--Manatee);
-    font-size: 12px;
-    width: 100%;
+    padding: 10px 10px 0 10px;
+    font-size: 16px;
     
 }
 .client-element .element{
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    gap: 5px;
 }
 .client-element .element .profil{
     width: 60px;
@@ -239,9 +246,9 @@ nav .logo img{
     color: var(--Blue-Zodiac);
 }
 .formulaire .en-tete .mail img{
-    width: 20px;
-    height: 20px;
-    margin-top: 5px;
+    width: 15px;
+    height: 15px;
+    margin-top: 10px;
 }
 .formulaire .en-tete p{
     color: var(--Blue-Zodiac);
@@ -283,6 +290,8 @@ input::placeholder {
 }
 footer{
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     width: 100%;
     background-color: var(--Blue-Zodiac);
@@ -301,13 +310,22 @@ footer{
     width: 100px;
     height: 90px;
     padding: 20px;
-    /* margin-left: 30px; */
+    
 }
 .copyright{
     display: flex;
     justify-content: center;
     align-items: center;
     color: var(--white);
+}
+.icon h3{
+    color: var(--white);
+    font-weight: bold;
+}
+.icon p{
+    font-size: 16px;
+    margin: 5px;
+    color: var(--Manatee);
 }
 .lien{
     display: flex;
@@ -381,40 +399,48 @@ footer{
 header .menu.responsive {
     display: flex;
     position: absolute;
-    top: 50px;
+    top: 45px;
     left: 0;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--Slate-Gray);
+    background-color: var(--white);
     flex-direction: column;
-    padding-bottom: 15px;
+    padding: 15px 0;
 }
 header .menu.responsive li {
     display: flex;
     justify-content: start;
     width: 100%;
-    color: var(--Slate-Gray) ;
+    color: var(--Blue-Zodiac);
     padding-left: 80px;
 }
-.background{
+header .menu.responsive li a {
+    display: flex;
+    justify-content: start;
+    width: 100%;
+    color: var(--Blue-Zodiac);
+    padding-left: 80px;
+}
+#background{
     background-image:url(../images/section-header.png);
-    height: 100%;
     background-position: center;
-    background-repeat: round;
+    background-repeat: no-repeat;
 }
-.background .description h2{
-   font-size: 20%;
+
+#background .description h2{
+    font-size:30px ;
+    margin-top: 100px;
 }
-.background .description p{
-    font-size: 12px;
+#background .description p{
+    font-size: 16px;
 } 
-.background .description .submit{
-    margin-bottom: 80px;
+#background .description .submit{
+    margin-top: 30px;
 }
 #clients{
-    width: 90%;
+    width: 100%;
     background-color: var(--white);
 }
 #clients .grand-titre{
@@ -428,10 +454,14 @@ header .menu.responsive li {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    width: 100%;
+    
 }
 #clients .contenaire .client-element{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 60%;
-    height: 90%;
 }
 #Services{
     display: flex;
@@ -445,13 +475,12 @@ header .menu.responsive li {
 .blocs-services{
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 100%;
 }
 .bloc{
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    width: 70%;
+    width: 60%;
 }
 #apropos{
     display: flex;
@@ -504,7 +533,7 @@ header .menu.responsive li {
 }
 .contact-contenaire .maps iframe{
     width: 380px;
-    height: 430px ;
+    height: 300px ;
 }
 .formulaire .en-tete .mail p{
     font-size: 12px;
@@ -513,8 +542,9 @@ header .menu.responsive li {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 15px;
-    height: 15px;
+    width: 12px;
+    height: 12px;
+    margin-top: 13px;
 }
 #contact{
     display: flex;
@@ -531,8 +561,151 @@ header .menu.responsive li {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 90%;
+    width: 100%;
     gap: 30px;
 }
-
 }
+@media (max-width:300px){
+    .contact-contenaire .maps iframe{
+        width: 200px;
+        height: 200px ;
+    }
+    .formulaire{
+        width: 250px;
+        height: 350px;   
+    }
+    .contact-contenaire .maps iframe{
+        width: 250px;
+        height: 300px ;
+    }
+    .formulaire .en-tete .mail p{
+        font-size: 8px;
+    }
+    .formulaire .en-tete .mail img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 10px;
+        height: 10px;
+        margin-top: 7px;
+    }
+    .formulaire .corps-form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .formulaire .corps-form input[type=text] {
+        width: 200px;
+        height: 30px;
+    }
+    input::placeholder {
+        padding: 5px;
+    }
+    .formulaire .corps-form textarea{
+        width: 200px;
+        height: 50px;
+    }
+    .formulaire .corps-form .submit{
+        width: 200px;
+        height: 30px;   
+    }
+    #apropos{
+        display: flex;
+        width: 100%;
+        margin-top: 50px; 
+    }
+    #apropos .grand-titre{
+        font-size: 20px;
+        margin-top: 50px;
+    }
+    #apropos .apropos-contenaire{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        width: 100%;
+    }
+    .droite img{
+        width: 200px;
+        height: 200px;
+    }
+    .gauche p{
+        width: 200px;
+        height: 200px;
+        font-size: 12px;
+        color: var(--Manatee);
+        line-height: 1.5;
+        word-spacing: 10;
+    }
+    #Services{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .grand-titre {
+        font-size: 20px;
+    }
+    .blocs-services{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .bloc{
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+    }
+    .bloc p{
+        font-size: 12px;
+    }
+    #clients{
+        width: 100%;
+        background-color: var(--white);
+    }
+    #clients .grand-titre{
+        display: flex;
+        font-size: 20px;
+        margin-top: 20px;
+        text-align: center;
+    }
+    #clients .contenaire{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+    #clients .contenaire .client-element{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+    }
+    #background{
+        background-image:url(../images/section-header.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vh;
+    }
+    #background .description h2{
+        font-size:20px ;
+        margin-top: 100px;
+    }
+    #background .description p{
+        font-size: 10px;
+    } 
+    #background .description .submit{
+        margin-top: 10px;
+        height: 30px;
+    }
+    .copyright{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--white);
+        font-size: 12px;
+    }
+    }
+
