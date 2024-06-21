@@ -162,6 +162,10 @@ nav .logo img{
     width: 20%;
     border-radius: 8px;
     padding: 0 20px 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .bloc .titre-service, .bloc p {
     padding: 0 5px 0 5px;
@@ -172,6 +176,9 @@ nav .logo img{
    
 }
 .bloc img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100px;
     height: 100px;
 }
@@ -309,7 +316,7 @@ footer{
 .footer-contenaire .logo img{
     width: 100px;
     height: 90px;
-    padding: 20px;
+    /* padding: 20px; */
     
 }
 .copyright{
@@ -413,7 +420,7 @@ header .menu.responsive li {
     display: flex;
     justify-content: start;
     width: 100%;
-    color: var(--Blue-Zodiac);
+    color: var(--Slate-Gray);
     padding-left: 80px;
 }
 header .menu.responsive li a {
@@ -431,7 +438,7 @@ header .menu.responsive li a {
 
 #background .description h2{
     font-size:30px ;
-    margin-top: 100px;
+    /* margin-top: 100px; */
 }
 #background .description p{
     font-size: 16px;
@@ -442,6 +449,7 @@ header .menu.responsive li a {
 #clients{
     width: 100%;
     background-color: var(--white);
+    margin-top: 50px;
 }
 #clients .grand-titre{
     display: flex;
@@ -485,7 +493,7 @@ header .menu.responsive li a {
 #apropos{
     display: flex;
     width: 100%;
-    margin-top: 50px; 
+    
 }
 #apropos .grand-titre{
     font-size: 30px;
@@ -627,8 +635,8 @@ header .menu.responsive li a {
         width: 100%;
     }
     .droite img{
-        width: 200px;
-        height: 200px;
+        width: 230px;
+        height: 230px;
     }
     .gauche p{
         width: 200px;
