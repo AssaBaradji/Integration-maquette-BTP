@@ -159,7 +159,7 @@ nav .logo img{
 }
 .bloc{
     background-color: var(--white);
-    width: 21%;
+    width: 20%;
     border-radius: 8px;
     padding: 0 20px 0 20px;
     display: flex;
