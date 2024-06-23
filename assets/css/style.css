@@ -52,22 +52,25 @@ nav .logo img{
     width: 100%;
     height: 120vh;
 }
-#background .description h2, p{
+#background .description h1, p{
     color: var(--white);
 }
-#background .description h2{
+#background .description h1{
     font-size:56px ;
 }
 #background .description p{
     font-size: 20px;
 }
-#background .description .submit{
+#background .description .submit {
     background-color: var(--Blue-Zodiac);
     color: var(--white);
     border: none;
     width: 197px;
     height: 56px;
     border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 #background .description{
     display: flex;
@@ -109,8 +112,6 @@ nav .logo img{
     padding: 30px 30px 0 0;
     display: flex;
     flex-direction: column;
-    /* justify-content: center;
-    align-items: center; */
 }
 .profil{
     width: 100px;
@@ -137,7 +138,6 @@ nav .logo img{
 .client-element .nom img{
     width: 10px;
     height: 10px;
-
 }
 #services{
     display: flex;
@@ -145,9 +145,7 @@ nav .logo img{
     justify-content: center;
     align-items: center;
     background-color: var(--Manatee);
-    width: 100%;
-  
-    
+    width: 100%;   
 }
 .blocs-services{
     display: flex;
@@ -195,7 +193,6 @@ nav .logo img{
     text-align: center;
     color: var(--Blue-Zodiac);
     font-size: 56px;
-    /* margin-top: 20px; */
 }
 #apropos{
     display: flex;
@@ -447,7 +444,6 @@ header .menu.responsive li a {
 
 #background .description h2{
     font-size:30px ;
-    /* margin-top: 100px; */
 }
 #background .description p{
     font-size: 16px;
