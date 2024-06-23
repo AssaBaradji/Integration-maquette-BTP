@@ -437,12 +437,14 @@ header .menu.responsive li a {
     padding-left: 80px;
 }
 #background{
-    background-image:url(../images/section-header.png);
+    background-image:url(../images/section-header.webp);
     background-position: center;
-    background-repeat: no-repeat;
 }
-
-#background .description h2{
+#background .description{
+    width: 90%;
+    margin:0 50px;
+}
+#background .description h1{
     font-size:30px ;
 }
 #background .description p{
