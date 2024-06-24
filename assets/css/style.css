@@ -14,6 +14,7 @@
     --Slate-Gray:#7c8c94;
     --Dark-Slate-Blue:#38586c;
     --white:#ffffff;
+    --black:rgba(0, 0, 0, 1);
 ;
 }
 body{
@@ -199,7 +200,6 @@ nav .logo img{
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin-top: 50px;
 }
 #apropos .apropos-contenaire{
     display: flex;
@@ -216,7 +216,7 @@ nav .logo img{
     width: 500px;
     height: 200px;
     font-size: 20px;
-    color: var(--Blue-Zodiac);
+    color: var(--black);
     line-height: 1.5;
     word-spacing: 10;
 }
