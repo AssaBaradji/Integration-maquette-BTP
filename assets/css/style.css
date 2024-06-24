@@ -144,7 +144,7 @@ nav .logo img{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: var(--Manatee);
+    background-color: var(--white);
     width: 100%;   
 }
 .blocs-services{
@@ -164,6 +164,7 @@ nav .logo img{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border: 1px solid var(--Dark-Slate-Blue);
 }
 .bloc h3{
     font-size:16px;
@@ -174,7 +175,7 @@ nav .logo img{
     font-size: 16px;
 }
 #services .grand-titre{
-    color: rgba(255, 255, 255, 1);
+    color: var(--Blue-Zodiac);
    
 }
 .bloc img{
@@ -191,7 +192,7 @@ nav .logo img{
     display: flex;
     justify-content: center;
     text-align: center;
-    color: rgba(12, 44, 67, 1);
+    color: var(--Blue-Zodiac);
     font-size: 56px;
 }
 #apropos{
