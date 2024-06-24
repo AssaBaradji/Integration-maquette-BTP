@@ -174,7 +174,7 @@ nav .logo img{
     font-size: 16px;
 }
 #services .grand-titre{
-    color: var(--white);
+    color: rgba(255, 255, 255, 1);
    
 }
 .bloc img{
@@ -191,7 +191,7 @@ nav .logo img{
     display: flex;
     justify-content: center;
     text-align: center;
-    color: var(--Blue-Zodiac);
+    color: rgba(12, 44, 67, 1);
     font-size: 56px;
 }
 #apropos{
